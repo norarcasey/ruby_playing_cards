@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Justin McKay"]
   spec.email         = ["justinmckay16@gmail.com"]
   spec.description   = %q{Basic playing cards}
-  spec.summary       = %q{Basic playing cards}
-  spec.homepage      = ""
+  spec.summary       = %q{Basic playing cards for playing with cards}
+  spec.homepage      = "https://github.com/jcmckay/ruby_playing_cards"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency 'bundler', '~> 1.3'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rake', '~> 0'
+  spec.add_development_dependency 'rspec', '~> 0'
 end
