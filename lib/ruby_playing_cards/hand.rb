@@ -1,5 +1,4 @@
 module RubyPlayingCards
-
   class Hand
 
     attr_accessor :cards, :player
@@ -11,6 +10,10 @@ module RubyPlayingCards
 
     def add_cards(cards)
       @cards << cards
+    end
+
+    def size
+      @cards.size
     end
 
     def to_s

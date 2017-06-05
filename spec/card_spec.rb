@@ -1,11 +1,11 @@
-require './card.rb'
+require './lib/ruby_playing_cards/card.rb'
 
-RSpec.describe Card do
+RSpec.describe RubyPlayingCards::Card do
 
   describe 'when creating cards' do
     it 'should show card' do
       for val in 2...10 do 
-        card = Card.new(val, 'suit')
+        card = RubyPlayingCards::Card.new(val, 'suit')
         expect(card.to_s).to eq("suit#{val}")
       end
     end
@@ -13,22 +13,22 @@ RSpec.describe Card do
 
   describe 'when building face cards' do
     it 'should build an ace' do
-      card = Card.new(1, 'suit')
+      card = RubyPlayingCards::Card.new(1, 'suit')
       expect(card.rank).to eq(:A)
     end
 
     it 'should build a jack' do
-      card = Card.new(11, 'suit')
+      card = RubyPlayingCards::Card.new(11, 'suit')
       expect(card.rank).to eq(:J)
     end
 
     it 'should build a queen' do
-      card = Card.new(12, 'suit')
+      card = RubyPlayingCards::Card.new(12, 'suit')
       expect(card.rank).to eq(:Q)
     end
 
     it 'should build a king' do
-      card = Card.new(13, 'suit')
+      card = RubyPlayingCards::Card.new(13, 'suit')
       expect(card.rank).to eq(:K)
     end
   end
