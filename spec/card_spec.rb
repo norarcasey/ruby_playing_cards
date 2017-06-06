@@ -5,7 +5,7 @@ RSpec.describe RubyPlayingCards::Card do
   describe 'when creating cards' do
     it 'should show card' do
       for val in 2...10 do 
-        card = RubyPlayingCards::Card.new(val, 'suit')
+        card = RubyPlayingCards::Card.new(val, {:icon => 'suit'})
         expect(card.to_s).to eq("suit#{val}")
       end
     end

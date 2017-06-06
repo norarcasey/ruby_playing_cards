@@ -1,10 +1,10 @@
 module RubyPlayingCards
   class Deck
     SUITS = [
-      { name: :spades,    icon: :♠},
-      { name: :hearts,    icon: :♥},
-      { name: :diamonds,  icon: :♦},
-      { name: :clubs,     icon: :♣}
+      { name: :spades,    icon: :♠,   color: :black },
+      { name: :clubs,     icon: :♣,   color: :black },
+      { name: :hearts,    icon: :♥,   color: :red   },
+      { name: :diamonds,  icon: :♦,   color: :red   }
     ]
     attr_accessor :cards
 
@@ -28,7 +28,7 @@ module RubyPlayingCards
     def build_deck
       SUITS.each do |suit|
         1.upto(13) do |rank|
-          @cards << Card.new(rank, suit[:icon])
+          @cards << Card.new(rank, suit)
         end
       end
     end
