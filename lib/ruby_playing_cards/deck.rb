@@ -18,8 +18,8 @@ module RubyPlayingCards
     end
 
     def to_s
-      @cards.each_with_index do |card, index|
-        puts "#{card.suit}#{card.rank} -- #{index+1}"
+      @cards.map do |card|
+        "#{card.suit}#{card.rank}"
       end
     end
 
@@ -27,8 +27,8 @@ module RubyPlayingCards
 
     def build_deck
       SUITS.each do |suit|
-        13.times do |n|
-          @cards << Card.new(n+1, suit[:icon])
+        1.upto(13) do |rank|
+          @cards << Card.new(rank, suit[:icon])
         end
       end
     end

@@ -31,7 +31,7 @@ RSpec.describe RubyPlayingCards::Dealer do
       HAND_SIZE = 3
       PLAYER_COUNT = 7
 
-      hands = dealer.deal deck, HAND_SIZE, PLAYER_COUNT
+      hands = dealer.deal deck, hand_size: HAND_SIZE, player_count: PLAYER_COUNT
 
       expect(hands.size).to eq(PLAYER_COUNT)
       hands.each { |h| expect(h.size).to eq(HAND_SIZE)}

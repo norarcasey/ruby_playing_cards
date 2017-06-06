@@ -8,7 +8,7 @@ module RubyPlayingCards
         deck.cards = deck.cards + top
       end
 
-      def deal(deck, hand_size, player_count)
+      def deal(deck, hand_size: 1, player_count: 1)
         hands = []
         card_total = hand_size * player_count
 

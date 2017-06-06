@@ -17,10 +17,10 @@ module RubyPlayingCards
     end
 
     def to_s
-      puts "Player #{@player}: " 
-      @cards.each do |card|
-        puts card.to_s    
-      end 
+      puts "Player #{@player}: "
+      @cards.map do |card|
+        card.to_s    
+      end
     end
 
   end
