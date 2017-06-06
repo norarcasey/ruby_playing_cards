@@ -1,4 +1,4 @@
-require './lib/ruby_playing_cards/card.rb'
+require 'spec_helper'
 
 RSpec.describe RubyPlayingCards::Card do
 

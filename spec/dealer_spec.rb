@@ -1,6 +1,4 @@
-require './lib/ruby_playing_cards/dealer.rb'
-require './lib/ruby_playing_cards/deck.rb'
-require './lib/ruby_playing_cards/hand.rb'
+require 'spec_helper'
 
 RSpec.describe RubyPlayingCards::Dealer do
 
