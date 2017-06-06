@@ -1,6 +1,6 @@
 # Ruby Playing Cards
 
-[![Build Status](https://travis-ci.org/jcmckay/ruby_playing_cards.png)](https://travis-ci.org/jcmckay/ruby_playing_cards) [![Coverage Status](https://coveralls.io/repos/jcmckay/ruby_playing_cards/badge.png?branch=master)](https://coveralls.io/r/jcmckay/ruby_playing_cards)
+[![Build Status](https://travis-ci.org/jcmckay/ruby_playing_cards.png)](https://travis-ci.org/jcmckay/ruby_playing_cards) [![Coverage Status](https://coveralls.io/repos/github/jcmckay/ruby_playing_cards/badge.svg?branch=master)](https://coveralls.io/github/jcmckay/ruby_playing_cards?branch=master)
 
 ## Instalation
 Add this line to your application's Gemfile:
