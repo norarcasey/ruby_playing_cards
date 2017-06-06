@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
-gem "rspec"
-gem "rake"
-gem 'coveralls', require: false
+gem 'rake'
+
+group :test do
+  gem 'rspec', '~> 3.0'
+  gem 'coveralls', require: false
+end
