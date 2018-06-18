@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jcmckay/ruby_playing_cards.png)](https://travis-ci.org/jcmckay/ruby_playing_cards) [![Coverage Status](https://coveralls.io/repos/github/jcmckay/ruby_playing_cards/badge.svg?branch=master)](https://coveralls.io/github/jcmckay/ruby_playing_cards?branch=master)
 
-## Instalation
+## Installation
 Add this line to your application's Gemfile:
 ```ruby
 gem 'ruby_playing_cards'
